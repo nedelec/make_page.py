@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# make_page.py
+# make_page.py creates a HTML page with links to files in given directories
 #
 # Copyright F. Nedelec, 14.12.2007 -- 4.2015
 
@@ -219,11 +219,8 @@ def main(args):
 #------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    if len(sys.argv)>1 and sys.argv[1]=='help':
+    if len(sys.argv)>1 and sys.argv[1].endswith("help"):
         print(__doc__)
     else:
         main(sys.argv[1:])
-
-
-
 
